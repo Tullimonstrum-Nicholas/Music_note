@@ -17,11 +17,11 @@
   - [勋伯格](古典\勋伯格.md)
 
 - 爵士
-  - [查理·帕克](爵士\Charlie Parker.md)
-  - [迈尔斯·戴维斯](爵士\Miles Davis.md)
-  - [比尔·伊文思](爵士\Bill Evans.md)
-  - [约翰·柯川](爵士\John Coltrane.md)
-  - [奇克·考瑞阿](爵士\Chick Corea.md)
+  - [查理·帕克](爵士\Charlie_Parker.md)
+  - [迈尔斯·戴维斯](爵士\Miles_Davis.md)
+  - [比尔·伊文思](爵士\Bill_Evans.md)
+  - [约翰·柯川](爵士\John_Coltrane.md)
+  - [奇克·考瑞阿](爵士\Chick_Corea.md)
 - 杂文
   - [爵士乐与印象派](杂文\爵士与印象派.md)
   - [音乐家晚期风格的超验精神性](杂文\音乐家晚期风格的超验精神性.md)
