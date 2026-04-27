@@ -42,23 +42,28 @@
   <script src="//cdn.jsdelivr.net/npm/marked@3.0.8/lib/marked.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@2/dist/docsify-katex.js"></script>
 
-  <!-- Mermaid 核心库（不需要任何插件） -->
+  <!-- Mermaid 核心库 -->
   <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
-  <!-- 初始化 Mermaid，并确保每次页面切换时重新渲染 -->
+  <!-- 稳定初始化 Mermaid，适配 Docsify 页面切换 -->
   <script>
     (function() {
-      if (window.mermaid) {
-        mermaid.initialize({ startOnLoad: true, theme: 'default' });
-        // 每次 Docsify 加载完新页面内容后，重新渲染页面中的 mermaid 图表
-        if (window.$docsify && window.$docsify.plugins) {
-          window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook) {
-            hook.doneEach(function() {
+      if (!window.mermaid) return;
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'default'
+      });
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook) {
+        hook.doneEach(function() {
+          setTimeout(function() {
+            if (typeof mermaid.run === 'function') {
+              mermaid.run({ querySelector: '.mermaid' });
+            } else {
               mermaid.init(undefined, document.querySelectorAll('.mermaid'));
-            });
-          });
-        }
-      }
+            }
+          }, 0);
+        });
+      });
     })();
   </script>
 </body>
