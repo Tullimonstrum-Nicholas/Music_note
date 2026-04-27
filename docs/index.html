@@ -13,40 +13,53 @@
 <body>
   <div id="app"></div>
   <script>
+    // ================= Docsify 配置 =================
     window.$docsify = {
       loadSidebar: true,
       name: '',
-      repo: ''
-    }
+      repo: '',
+      // 自定义 markdown 渲染器，用于支持 mermaid 图表
+      markdown: {
+        renderer: {
+          code: function(code, lang) {
+            // 如果代码块语言是 mermaid，输出一个带 mermaid 类的 div，由 mermaid 库渲染
+            if (lang === "mermaid") {
+              return '<div class="mermaid">' + code + '</div>';
+            }
+            // 其他语言的代码块保持默认处理
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
+    };
   </script>
-  <!-- Docsify v4 -->
+
+  <!-- Docsify 核心 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-  <!-- KaTeX 公式支持 -->
+  <!-- KaTeX 公式依赖 -->
   <script src="//cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/marked@3.0.8/lib/marked.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@2/dist/docsify-katex.js"></script>
 
-// Import mermaid
-//  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-//  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <!-- Mermaid 核心库（不需要任何插件） -->
+  <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
-var num = 0;
-mermaid.initialize({ startOnLoad: false });
-
-window.$docsify = {
-  markdown: {
-    renderer: {
-      code: function(code, lang) {
-        if (lang === "mermaid") {
-          return (
-            '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-          );
+  <!-- 初始化 Mermaid，并确保每次页面切换时重新渲染 -->
+  <script>
+    (function() {
+      if (window.mermaid) {
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+        // 每次 Docsify 加载完新页面内容后，重新渲染页面中的 mermaid 图表
+        if (window.$docsify && window.$docsify.plugins) {
+          window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook) {
+            hook.doneEach(function() {
+              mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+            });
+          });
         }
-        return this.origin.code.apply(this, arguments);
       }
-    }
-  }
-}
+    })();
+  </script>
 </body>
 </html>
