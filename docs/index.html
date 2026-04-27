@@ -27,8 +27,26 @@
   <script src="//cdn.jsdelivr.net/npm/marked@3.0.8/lib/marked.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@2/dist/docsify-katex.js"></script>
 
-  <!-- Mermaid 图表支持（稳定组合） -->
-  <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid2/dist/docsify-mermaid2.js"></script>
+// Import mermaid
+//  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+//  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+var num = 0;
+mermaid.initialize({ startOnLoad: false });
+
+window.$docsify = {
+  markdown: {
+    renderer: {
+      code: function(code, lang) {
+        if (lang === "mermaid") {
+          return (
+            '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+          );
+        }
+        return this.origin.code.apply(this, arguments);
+      }
+    }
+  }
+}
 </body>
 </html>
