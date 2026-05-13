@@ -35,7 +35,7 @@
 
 - [King Crimson 的巴托克方法论](前摇\King_Crimson的巴托克方法论.md)
 - [即兴与结构并存的创作范式](前摇\即兴与结构并存的创作范式.md)
-- [《Pawn Hearts》：前卫摇滚的艺术标杆](前摇\《Pawn Hearts》：前卫摇滚的艺术标杆.md)
+- [《Pawn Hearts》：前卫摇滚的艺术标杆](前摇\Pawn_Hearts_前卫摇滚的艺术标杆.md)
 
 ## 杂文
 
