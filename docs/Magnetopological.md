@@ -18,7 +18,7 @@ $^{2}$ 量子物质科学协同创新中心，北京 100871
 
 在这篇快报中，我们通过在具有强 SLC 的 kagome 晶格莫特绝缘体上的具体例子，引入了“磁拓扑力学”的概念，展示了 SLC 可以诱导拓扑力学。具体来说，我们研究了一个具有竞争交换相互作用的经典海森堡模型。结果表明，强 SLC 区域打破了自旋简并，并将系统驱动到一个磁有序态。
 
-![image-20260519190322086](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190322086.png)
+![屏幕截图 2026-05-19 190316](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190316.png)
 
 <center>图 1. (a) kagome 晶格上的自旋相互作用。(b) 代表性的局域自旋构型。红色和蓝色圆圈分别代表反平行排列的自旋向上和向下。这些构型及其对称性相关的对应物，作为“乐高积木”，可以从中构建出任意全局自旋构型。</center>
 
@@ -56,7 +56,7 @@ $$
 
 为了实现一个声子谱具有非平凡拓扑极化的拓扑麦克斯韦晶格，我们考虑一个扩展的海森堡模型，
 $$
-$\begin{array}{rl} & {\mathcal{H}_{ex} = \sum_{\langle i,j\rangle_n}J_{ij}\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_2}J_2\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_{3|}}J_{3|}\mathbf{S}_i\cdot \mathbf{S}_j}\\ & {\qquad +\sum_{\langle i,j\rangle_3}J_{3*}\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_4}J_4\mathbf{S}_i\cdot \mathbf{S}_j,} \end{array} \quad (6)
+\begin{array}{rl} & {\mathcal{H}_{ex} = \sum_{\langle i,j\rangle_n}J_{ij}\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_2}J_2\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_{3|}}J_{3|}\mathbf{S}_i\cdot \mathbf{S}_j}\\ & {\qquad +\sum_{\langle i,j\rangle_3}J_{3*}\mathbf{S}_i\cdot \mathbf{S}_j + \sum_{\langle i,j\rangle_4}J_4\mathbf{S}_i\cdot \mathbf{S}_j,} \end{array} \quad (6)
 $$
 其中 $J_{ij} > 0$，$J_{2}$，$J_{3|}$，$J_{3*}$ 和 $J_{4}$ 分别表示最近邻、第二近邻、键方向第三近邻、跨越 plaquette 的第三近邻和第四近邻交换相互作用，如图 1a 所示。
 
@@ -65,7 +65,7 @@ $$
 $$
 \begin{array}{rl} & {\mathcal{H}_{ex}^{Ising} = \sum_{\langle i,j\rangle}\big(J - \frac{Jb}{2}\big)\sigma_i\sigma_j + \sum_{\langle i,j\rangle_2}\big(J_2 + \frac{Jb}{2}\big)\sigma_i\sigma_j}\\ & {\qquad +\sum_{\langle i,j\rangle_{3|}}\big(J_{3|}\| +Jb\big)\sigma_i\sigma_j + \sum_{\langle i,j\rangle_3*}J_{3*}\sigma_i\sigma_j}\\ & {\qquad +\sum_{\langle i,j\rangle_4}J_4\sigma_i\sigma_j.} \end{array} \quad (7)
 $$
-![image-20260519190413458](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190413458.png)
+![屏幕截图 2026-05-19 190400](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190400.png)
 
 <center>图 2. (a) 在 $J = 1$，$J_{2} = 0.05$，$J_{3||} = 0.03$，$J_{3*} = 0.03$，$J_{4} = -0.02$，$b = 0.2$ 条件下，通过模拟退火得到的自旋构型。红圈表示自旋向上 $(+\hat{z})$，蓝圈表示自旋向下 $(-\hat{z})$。(b) SLC 诱导的相应晶格畸变。</center>
 
@@ -73,7 +73,7 @@ $$
 
 引入弱的反铁磁 $J_{3*}$ 和弱的铁磁 $J_{4}$ 会解除宏观简并并选择一个有序态。我们通过在 $3\times 10\times 10$ 的晶格上进行周期性边界条件的模拟退火来识别这个被选中的有序态；一个代表性的基态自旋构型如图 2(a) 所示。得到的相是十二重简并的，反映了分别与晶格旋转、反演和全局自旋反转相关的 $\mathbb{Z}_3\times \mathbb{Z}_2\times \mathbb{Z}_2$ 对称性的自发破缺。一旦基态自旋构型确定，由 SLC 诱导的晶格畸变就直接从方程 (3) 得出，如图 2(b) 所示。这种畸变将原本笔直的 kagome 细丝弯曲成锯齿形链。由于 kagome 晶格中的自应力态依赖于这些直线键，这种弯曲预计会强烈抑制，甚至可能消除自应力态和相应的体零模。
 
-![image-20260519190438519](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190438519.png)
+![屏幕截图 2026-05-19 190433](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190433.png)
 
 <center>图 3. (a) 畸变 kagome 晶格的晶胞。它包含三个标记为 0-2 的格点和六个标记为 $b_{1} - b_{6}$ 的键。蓝色箭头表示格点位移，绿色箭头 $a_{1} - a_{3}$ 是沿平移对称方向的三条基矢。(b) 沿 $K - \Gamma - M - K$ 路径的三个最低频率声子模，插图为布里渊区。红线（蓝线）是完美（畸变）kagome 晶格的声子模，其中 $\frac{\tau_{2}}{k} = -0.0125$</center>
 
@@ -81,7 +81,7 @@ $$
 
 沿 $K - \Gamma - M - K$ 线的三个最低频率声子模如图 3(b) 所示。在没有 SLC 的情况下（红色虚线），声子谱在 $q = 0$ 处显示出三个零模：两个刚性平移和一个仅在位移二阶改变晶胞面积的柔性模。此外，kagome 晶格沿三个对称性相关的 $\Gamma - M$ 方向也存在零模，对于一个 $3\times N\times N$ 的系统，总共给出 $3N$ 个零模。这些模与 $3N$ 条直细丝相关，与麦克斯韦指数定理一致。当 SLC 开启时（蓝线），畸变打破了直细丝，并打开了沿 $\Gamma - M$ 方向的体零模带隙。因此，只剩下与 $q = 0$ 处刚性平移相关的两个平凡零模。因此，SLC 有效地将这个 kagome 晶格驱动成了一个拓扑麦克斯韦晶格。
 
-![image-20260519190522200](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190522200.png)
+![屏幕截图 2026-05-19 190517](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190517.png)
 
 <center>图 4. (a) SLC 诱导的畸变 kagome 晶格，显示了三种不同的边界终止。对于每种边界，相应的边界晶胞用黑圈表示。(b-d) 沿 $\mathbf{n}$ 轴方向的圆柱体（或斜圆柱体）的声子谱，其中一条边采用与图 4(a) 中边界对应的自由边界条件，而对边被夹持，参数为 $\frac{J^{\alpha}}{k} = -0.0125$</center>
 
@@ -152,7 +152,7 @@ $$
 $$
 其中 $E^{(i)}_\alpha$ 表示在第 $\alpha$ 种分解下模式 $i$ 的能量。特别地，单个模式无法平铺整个晶格：如果单独一个模式 $i$ 就足够了，方程 (13) 将要求 $E^{(i)}_1 = E^{(i)}_2 = E^{(i)}_3$，这对于上面列出的任何模式都不满足。
 
-![image-20260519190622431](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190622431.png)
+![屏幕截图 2026-05-19 190618](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190618.png)
 
 <center>图 5. (a) 格点 i 的局域自旋模式。(b) kagome 晶格上用于评估 $\mathcal{H}_{e}^{\mathrm{Ising}}$ 能量的代表性局域自旋构型。红圈表示自旋向上 $(+\hat{z})$，蓝圈表示自旋向下 $(- \hat{z})$。所有这些构型及其对称性相关的对应物，都作为“乐高积木”，可以从中构建出任意全局自旋构型。</center>
 
@@ -180,7 +180,7 @@ $$
 $$
 在弱 SLC 区域 ($0< b< \frac{1}{6}$)，基态仍然是共面的 $120^{\circ}$ 自旋构型，与仅含最近邻相互作用的 Heisenberg 模型相同 [15]。在这个相中，所有的最近邻自旋键能都相等，因此最优位移为零，$\mathbf{u}_i^* = 0$，晶格保持未畸变。
 
-![image-20260519190857249](C:\Users\Cheng\AppData\Roaming\Typora\typora-user-images\image-20260519190857249.png)
+![屏幕截图 2026-05-19 190842](C:\Users\Cheng\Desktop\My_Note\docs\屏幕截图 2026-05-19 190842.png)
 
 <center>图 6. (a) 伊辛哈密顿量 (18) 的 1/9 磁化平台自旋构型。红色（蓝色）圆圈表示沿 $+ \hat{z}$（$- \hat{z}$）方向的自旋。橙色平行四边形标出了晶胞。(b) SLC 诱导的相应晶格畸变。(c) 畸变晶格沿 $K - \Gamma - M - K$ 的声子谱。(d) (c) 中红色方框区域的声子谱。</center>
 
