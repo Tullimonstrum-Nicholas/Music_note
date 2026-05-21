@@ -21,10 +21,12 @@
 
 ## 爵士
 
+- [吉尔·埃文斯](爵士\Gil_Evans.md)
 - [查理·帕克](爵士\Charlie_Parker.md)
 - [迈尔斯·戴维斯](爵士\Miles_Davis.md)
 - [比尔·伊文思](爵士\Bill_Evans.md)
 - [约翰·柯川](爵士\John_Coltrane.md)
+- [爱丽丝·柯川](爵士\Alice_Coltrane.md)
 - [奇克·考瑞阿](爵士\Chick_Corea.md)
 
 ## 前卫摇滚
